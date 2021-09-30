@@ -1,0 +1,102 @@
+$alpha-color: #ffffff;
+$secondary-alpha-color: #c5c5c5;
+$success-color: #04de5b;
+$pending-color: orange;
+$error-color: #ea0707;
+$primary-blue-color: #1d63b1;
+$secondary-blue-color: #2072ce;
+$text-input-background: #f8f8f8;
+$primary-gray: #878787;
+$primary-black: #000000;
+$seconday-gray: #a9a9a9;
+$thrid-gray: #494949;
+
+.va-button--default {
+  background-color: $primary-blue-color !important;
+}
+
+.va-button--normal {
+  border-radius: 10px;
+  box-shadow: none !important;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.va-button-normal-cancel {
+  background: transparent !important;
+  border: solid 1px #ececec !important;
+  color: gray !important;
+}
+
+.va-button-normal-cancel:hover {
+  -webkit-filter: brightness(30%);
+  filter: brightness(30%);
+}
+
+.va-input__container {
+  border: none;
+  background-color: $text-input-background !important;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.va-input-search-container {
+  border: none;
+  background: transparent;
+  margin: 0;
+  border-radius: 80px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+
+  & .va-input__container {
+    background: transparent !important;
+  }
+}
+
+.va-success-color {
+  color: $success-color;
+}
+
+.va-pending-color {
+  color: $pending-color;
+}
+
+.va-error-color {
+  color: $error-color;
+}
+
+.va-card__header-title {
+  color: $primary-black !important;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.va-input__container__label,
+.va-select__label {
+  color: $primary-gray !important;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.va-form-label {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.va-form-required-label::after {
+  content: " *";
+  color: red;
+}
+
+.va-select {
+  background-color: $text-input-background !important;
+}
+
+.app-layout .app-sidebar-link__item {
+  color: $alpha-color;
+  background: black !important;
+}
+
+.app-layout .app-sidebar-link__item:hover {
+  color: $alpha-color;
+  background: #2072ce !important;
+}
